@@ -11264,3 +11264,8 @@ body {
   border: 2px solid;
   border-color: black;
 }
+
+.logo>img {
+  width: 50px;
+
+}
