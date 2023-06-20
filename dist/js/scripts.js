@@ -1,3 +1,4 @@
+
 /*!
     * Start Bootstrap - SB Admin v7.0.7 (https://startbootstrap.com/template/sb-admin)
     * Copyright 2013-2023 Start Bootstrap
@@ -6,7 +7,15 @@
     // 
 // Scripts
 // 
+const supabaseUrl = 'https://mhfznlqqbhxkqhyiofbu.supabase.co'
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1oZnpubHFxYmh4a3FoeWlvZmJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODcyNzI3OTUsImV4cCI6MjAwMjg0ODc5NX0.r5otWU4z5jNjElrIKb5EMeH6eKPt-HYqU5ptfRff_o8"
+const client = supabase.createClient(supabaseUrl, supabaseKey)
 
+
+
+client
+  .from('SensorData')
+  .select("*").then(console.log);
 
 window.addEventListener('DOMContentLoaded', event => {
 

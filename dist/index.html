@@ -10,6 +10,8 @@
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+      
+
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
@@ -44,7 +46,7 @@
                 <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <!-- <div class="sb-sidenav-menu-heading">Dashboard</div> -->
                             <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
@@ -52,7 +54,7 @@
                             <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
+                                Analytics
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
@@ -177,7 +179,45 @@
                         <div class="row">
                             <div class="col-xl-3">
                                 <div class="card mb-4">
-                                    <div class="card-header">Sensor 1</div>
+                                    <div class="card-header">Greenhouse</div>
+                                    <div class="row">
+                                        <div class="col-6 ">
+                                          <p class="text-start m-2 p-2">Crop Status</p>
+                                          <p class="text-start m-2 p-2">
+                                            <i class="fas fa-leaf me-2"></i>Crop Type
+                                        </p>
+                                          
+                                          <p class="text-start m-2 p-2">
+                                            <i class="fas fa-tint me-2"></i>Humidity
+                                        </p>
+                                          <p class="text-start m-2 p-2">
+                                            <i class="fas fa-thermometer-half me-2"></i>Temperature
+                                        </p>
+                                        </p>
+                                            <p class="text-start m-2 p-2">
+                                            <i class="fas fa-cloud me-2"></i>Rainfall
+                                        </p>
+                                        </p>
+                                            <p class="text-start m-2 p-2">
+                                            <i class="fas fa-sun me-2"></i>Sun Hours
+                                        </p>
+                                        </div>
+                                        <div class="col-6">
+                                          <p class="text-end m-2 p-2">
+                                            <i class="fa fa-circle flash-icon" style="color: green;"></i>
+                                          </p>
+                                          <p class="text-end m-2 p-2">Wheat</p>
+                                          <p class="text-end m-2 p-2">60%</p>
+                                          <p class="text-end m-2 p-2">21 F</p>
+                                          <p class="text-end m-2 p-2">149 mm</p>
+                                          <p class="text-end m-2 p-2">9.1 Hrs</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="card mb-4">
+                                    <div class="card-header">Grain Bin</div>
                                     <div class="row">
                                         <div class="col-6 ">
                                           <p class="text-start m-2 p-2">Crop Status</p>
@@ -205,7 +245,7 @@
                             </div>
                             <div class="col-xl-3">
                                 <div class="card mb-4">
-                                    <div class="card-header">Sensor 1</div>
+                                    <div class="card-header">NE Field</div>
                                     <div class="row">
                                         <div class="col-6 ">
                                           <p class="text-start m-2 p-2">Crop Status</p>
@@ -233,7 +273,7 @@
                             </div>
                             <div class="col-xl-3">
                                 <div class="card mb-4">
-                                    <div class="card-header">Sensor 1</div>
+                                    <div class="card-header">SW Field</div>
                                     <div class="row">
                                         <div class="col-6 ">
                                           <p class="text-start m-2 p-2">Crop Status</p>
@@ -261,7 +301,7 @@
                             </div>
                             <div class="col-xl-3">
                                 <div class="card mb-4">
-                                    <div class="card-header">Sensor 1</div>
+                                    <div class="card-header">SE Field</div>
                                     <div class="row">
                                         <div class="col-6 ">
                                           <p class="text-start m-2 p-2">Crop Status</p>
@@ -289,35 +329,7 @@
                             </div>
                             <div class="col-xl-3">
                                 <div class="card mb-4">
-                                    <div class="card-header">Sensor 1</div>
-                                    <div class="row">
-                                        <div class="col-6 ">
-                                          <p class="text-start m-2 p-2">Crop Status</p>
-                                          <p class="text-start m-2 p-2">
-                                            <i class="fas fa-leaf me-2"></i>Crop Type
-                                        </p>
-                                          
-                                          <p class="text-start m-2 p-2">
-                                            <i class="fas fa-tint me-2"></i>Humidity
-                                        </p>
-                                          <p class="text-start m-2 p-2">
-                                            <i class="fas fa-thermometer-half me-2"></i>Temperature
-                                        </p>
-                                        </div>
-                                        <div class="col-6">
-                                          <p class="text-end m-2 p-2">
-                                            <i class="fa fa-circle flash-icon" style="color: rgb(128, 30, 0);"></i>
-                                          </p>
-                                          <p class="text-end m-2 p-2">Wheat</p>
-                                          <p class="text-end m-2 p-2">60%</p>
-                                          <p class="text-end m-2 p-2">21 F</p>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="card mb-4">
-                                    <div class="card-header">Sensor 1</div>
+                                    <div class="card-header">NW Field</div>
                                     <div class="row">
                                         <div class="col-6 ">
                                           <p class="text-start m-2 p-2">Crop Status</p>
@@ -847,6 +859,8 @@
                 </footer>
             </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
